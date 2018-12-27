@@ -1,3 +1,42 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Simple Servers and Server Abuse](#simple-servers-and-server-abuse)
+  - [Web Server](#web-server)
+    - [Perl Simple Webserver](#perl-simple-webserver)
+    - [Python3 Simple Webserver](#python3-simple-webserver)
+    - [Who Still Uses Python2](#who-still-uses-python2)
+    - [Netcat Simple Server on Port 7000](#netcat-simple-server-on-port-7000)
+    - [PHP Simple Webserver](#php-simple-webserver)
+    - [Share A Single File](#share-a-single-file)
+  - [Other Ways Of Accessing Files](#other-ways-of-accessing-files)
+    - [Mount Folder or Filesystem Over SSH](#mount-folder-or-filesystem-over-ssh)
+    - [Backup And Synchronize Entire Remote Folder Locally](#backup-and-synchronize-entire-remote-folder-locally)
+    - [Move Lots Of Files Over SSH](#move-lots-of-files-over-ssh)
+    - [The scp Version To Move Lots Of Files](#the-scp-version-to-move-lots-of-files)
+    - [Push A Single File To Up To 32 Servers](#push-a-single-file-to-up-to-32-servers)
+    - [Save and Stream A Remote File](#save-and-stream-a-remote-file)
+  - [Server Access](#server-access)
+    - [Copy Your SSH Public Key To A Server That Does Not Have ssh-copy-id](#copy-your-ssh-public-key-to-a-server-that-does-not-have-ssh-copy-id)
+    - [Run A Command On A List Of Remote Servers Read From A File](#run-a-command-on-a-list-of-remote-servers-read-from-a-file)
+    - [Run Local Script On Remote Server](#run-local-script-on-remote-server)
+    - [Forward Your Private Keys Through SSH](#forward-your-private-keys-through-ssh)
+  - [Server Abuse From The Command Line](#server-abuse-from-the-command-line)
+    - [Get Futurama Quotes From slashdot.org](#get-futurama-quotes-from-slashdotorg)
+    - [Stream Youtube URL Directly To mplayer](#stream-youtube-url-directly-to-mplayer)
+    - [Simple Multi User Encrypted Chat Server For 5 Users](#simple-multi-user-encrypted-chat-server-for-5-users)
+    - [Running GUI Programs Remotely](#running-gui-programs-remotely)
+    - [BOFH Excuse Server](#bofh-excuse-server)
+    - [A Simple Linux Remote Desktop](#a-simple-linux-remote-desktop)
+    - [Find The Fastest Free DNS](#find-the-fastest-free-dns)
+  - [Fix Problems You Never Knew You Had](#fix-problems-you-never-knew-you-had)
+    - [Identify Differences Between Directories](#identify-differences-between-directories)
+    - [Record Output Of Any Command From Server](#record-output-of-any-command-from-server)
+    - [Pack Up Local Files Into A Tarball On Remote System Without Writing Local](#pack-up-local-files-into-a-tarball-on-remote-system-without-writing-local)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Simple Servers and Server Abuse
 
 ## Web Server
@@ -81,7 +120,7 @@ ssh USER@HOST cat REMOTE_FILE.mp4 | tee LOCAL_FILE.mp4 | mplayer -
 
 ## Server Access
 
-### Copy Your SSH Public Key To A Server That Does Not Hace ssh-copy-id
+### Copy Your SSH Public Key To A Server That Does Not Have ssh-copy-id
 ```
 cat ~/.ssh/id_rsa.pub | ssh user@machine "mkdir ~/.ssh; cat >>
 ~/.ssh/authorized_keys"
