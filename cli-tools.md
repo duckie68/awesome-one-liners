@@ -43,7 +43,7 @@ compile   Compile the binary.
 ## mount
 ### Better Than Linking
 Serving a website from your home folder with conventional servers means messing
-with permissions.  Try this idea from [Azer Koçulu] [1]
+with permissions.  Try this idea from [Azer Koçulu][1]
 ~~~
 mount --bind ~/my-website /var/www
 ~~~
@@ -53,14 +53,14 @@ mount --bind ~/my-website /var/www
 ~~~
 nl foobat.txt
 ~~~
-[Azer Koçulu] [1]
+[Azer Koçulu][1]
 ## slop
 ### Use The Mouse To Find Coordinates Of A Region
 ~~~
 slop
 ~~~
 ### A Short Script To Record A Region Of Your Screen
-Written by [Azer Koçulu] [1]
+Written by [Azer Koçulu][1]
 ~~~
 #!/bin/bash
 slop=$(slop -f "%x %y %w %h %g %i") || exit 1
