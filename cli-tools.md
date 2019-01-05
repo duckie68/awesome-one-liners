@@ -86,4 +86,4 @@ yes | pacman -S cool-program
 ~~~
 
 
-[1]: (https://azer.bike/journal/10-linux-commands-that-will-save-your-time/) "Azer Koçulu"
+[1]: https://azer.bike/journal/10-linux-commands-that-will-save-your-time/ "Azer Koçulu"
